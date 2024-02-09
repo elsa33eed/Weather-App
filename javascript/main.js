@@ -37,3 +37,5 @@ async function checkWeather(city = "cairo") {
 function handleClick() {
   checkWeather(searchBox.value);
 }
+
+// PWA
