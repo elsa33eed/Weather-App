@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./Images/icons8-night-32.png"
+      type="image/x-icon"
+    />
+    <title>Weather App</title>
+    <script
+      src="https://kit.fontawesome.com/afb375d526.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./Style/style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Enter the city name"
+          spellcheck="false"
+        />
+        <button onclick="handleClick()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div class="error">
+        <i class="fa-regular fa-circle-xmark"></i> Invalid City name
+      </div>
+      <div class="weather">
+        <img class="weather-icon" src="./Images/rain.png" alt="Raining" />
+        <h1 class="temp">00 °C</h1>
+        <h2 class="city">City</h2>
+        <div class="details">
+          <div class="col">
+            <img src="./Images/humidity.png" alt="humidity" />
+            <div>
+              <p class="humidity">00%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./Images/wind.png" alt="Wind" />
+            <div>
+              <p class="wind">00 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="./javascript/main.js"></script>
+  </body>
+</html>
